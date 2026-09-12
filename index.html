@@ -8,159 +8,159 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
---bg: #F7F5F0;
---card: #FFFFFF;
---ink: #262321;
---ink-soft: #6b6560;
---line: #E3DED4;
---green: #2F6B4F;
---green-bg: #E7F0EA;
---rust: #B4482C;
---rust-bg: #F5E7E1;
---tag-string: #7A5C3E;
---chip-off-bg: #EDEBE6;
---chip-off-ink: #A39C90;
+  --bg: #F7F5F0;
+  --card: #FFFFFF;
+  --ink: #262321;
+  --ink-soft: #6b6560;
+  --line: #E3DED4;
+  --green: #2F6B4F;
+  --green-bg: #E7F0EA;
+  --rust: #B4482C;
+  --rust-bg: #F5E7E1;
+  --tag-string: #7A5C3E;
+  --chip-off-bg: #EDEBE6;
+  --chip-off-ink: #A39C90;
 }
 *{ box-sizing: border-box; }
 body{
-margin:0;
-background: var(--bg);
-color: var(--ink);
-font-family: 'Inter', sans-serif;
--webkit-font-smoothing: antialiased;
+  margin:0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 header{
-padding: 48px 24px 28px;
-text-align:center;
-border-bottom: 1px solid var(--line);
+  padding: 48px 24px 28px;
+  text-align:center;
+  border-bottom: 1px solid var(--line);
 }
 header h1{
-font-family:'Fraunces', serif;
-font-weight:600;
-font-size: clamp(32px, 6vw, 48px);
-margin:0 0 8px;
-letter-spacing: -0.01em;
+  font-family:'Fraunces', serif;
+  font-weight:600;
+  font-size: clamp(32px, 6vw, 48px);
+  margin:0 0 8px;
+  letter-spacing: -0.01em;
 }
 header p{
-margin:0;
-color: var(--ink-soft);
-font-size: 15px;
-max-width: 480px;
-margin-inline:auto;
+  margin:0;
+  color: var(--ink-soft);
+  font-size: 15px;
+  max-width: 480px;
+  margin-inline:auto;
 }
 main{
-max-width: 1100px;
-margin: 0 auto;
-padding: 40px 20px 80px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
 }
 #grid{
-display:grid;
-grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-gap: 28px;
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 28px;
 }
 .card{
-background: var(--card);
-border: 1px solid var(--line);
-border-radius: 4px;
-overflow: hidden;
-position: relative;
-display:flex;
-flex-direction:column;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  display:flex;
+  flex-direction:column;
 }
 .photo-wrap{
-position:relative;
-aspect-ratio: 4/5;
-background: #EFEBE2;
-overflow:hidden;
+  position:relative;
+  aspect-ratio: 4/5;
+  background: #EFEBE2;
+  overflow:hidden;
 }
 .photo-wrap img{
-width:100%; height:100%; object-fit:cover; display:block;
+  width:100%; height:100%; object-fit:cover; display:block;
 }
 .stamp{
-position:absolute;
-top:12px;
-left:12px;
-font-size:11px;
-font-weight:600;
-padding: 4px 10px;
-border-radius: 3px;
-text-transform: uppercase;
-letter-spacing: 0.04em;
-transform: rotate(-4deg);
+  position:absolute;
+  top:12px;
+  left:12px;
+  font-size:11px;
+  font-weight:600;
+  padding: 4px 10px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  transform: rotate(-4deg);
 }
 .stamp.disponible{ background: var(--green-bg); color: var(--green); border:1px solid var(--green); }
 .stamp.agotado{ background: var(--rust-bg); color: var(--rust); border:1px solid var(--rust); }
 .info{
-padding: 16px 16px 18px;
-display:flex;
-flex-direction:column;
-gap:10px;
-flex:1;
+  padding: 16px 16px 18px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  flex:1;
 }
 .info h3{
-margin:0;
-font-family:'Fraunces', serif;
-font-weight:500;
-font-size: 18px;
+  margin:0;
+  font-family:'Fraunces', serif;
+  font-weight:500;
+  font-size: 18px;
 }
 .price{
-margin:0;
-font-size: 20px;
-font-weight:600;
+  margin:0;
+  font-size: 20px;
+  font-weight:600;
 }
 .tallas-label{
-font-size: 11px;
-text-transform: uppercase;
-letter-spacing: 0.04em;
-color: var(--ink-soft);
-margin: 4px 0 -2px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+  margin: 4px 0 -2px;
 }
 .tallas-wrap{
-display:flex;
-flex-wrap: wrap;
-gap: 6px;
+  display:flex;
+  flex-wrap: wrap;
+  gap: 6px;
 }
 .talla-chip{
-font-size: 12px;
-font-weight:600;
-padding: 4px 9px;
-border-radius: 3px;
-border: 1px solid var(--green);
-color: var(--green);
-background: var(--green-bg);
+  font-size: 12px;
+  font-weight:600;
+  padding: 4px 9px;
+  border-radius: 3px;
+  border: 1px solid var(--green);
+  color: var(--green);
+  background: var(--green-bg);
 }
 .talla-chip.vendida{
-border: 1px solid var(--chip-off-ink);
-color: var(--chip-off-ink);
-background: var(--chip-off-bg);
-text-decoration: line-through;
+  border: 1px solid var(--chip-off-ink);
+  color: var(--chip-off-ink);
+  background: var(--chip-off-bg);
+  text-decoration: line-through;
 }
 .ig-btn{
-display:flex;
-align-items:center;
-justify-content:center;
-gap:8px;
-margin-top:auto;
-padding: 10px 12px;
-border-radius: 3px;
-background: var(--tag-string);
-color: #fff;
-text-decoration:none;
-font-size: 13px;
-font-weight:600;
-transition: opacity .15s ease;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  margin-top:auto;
+  padding: 10px 12px;
+  border-radius: 3px;
+  background: var(--tag-string);
+  color: #fff;
+  text-decoration:none;
+  font-size: 13px;
+  font-weight:600;
+  transition: opacity .15s ease;
 }
 .ig-btn:hover{ opacity:.85; }
 .card.agotado .ig-btn{
-background: var(--ink-soft);
-pointer-events:none;
-opacity:.6;
+  background: var(--ink-soft);
+  pointer-events:none;
+  opacity:.6;
 }
 footer{
-text-align:center;
-padding: 30px 20px 50px;
-color: var(--ink-soft);
-font-size:13px;
+  text-align:center;
+  padding: 30px 20px 50px;
+  color: var(--ink-soft);
+  font-size:13px;
 }
 footer a{ color: var(--tag-string); }
 </style>
@@ -168,16 +168,16 @@ footer a{ color: var(--tag-string); }
 <body>
 
 <header>
-<h1>Mi Closet</h1>
-<p>Ropa en buen estado, precios fijos. Pregunta directo por Instagram si te interesa una prenda.</p>
+  <h1>Mi Closet</h1>
+  <p>Ropa en buen estado, precios fijos. Pregunta directo por Instagram si te interesa una prenda.</p>
 </header>
 
 <main>
-<div id="grid"></div>
+  <div id="grid"></div>
 </main>
 
 <footer>
-Envíos a coordinar por Instagram · <a id="footer-ig" href="#">@tu_usuario</a>
+  Envíos a coordinar por Instagram · <a id="footer-ig" href="#">@tu_usuario</a>
 </footer>
 
 <script>
@@ -189,73 +189,74 @@ Envíos a coordinar por Instagram · <a id="footer-ig" href="#">@tu_usuario</a>
 const INSTAGRAM_USUARIO = "tu_usuario"; // <-- pon aquí tu usuario de Instagram (sin @)
 
 const productos = [
-{
-nombre: "Sudadera con capucha",
-precio: 300,
-imagen: "sudadera.jpg",
-tallas: [
-{ talla: "S", disponible: true },
-{ talla: "M", disponible: true },
-{ talla: "L", disponible: false }
-]
-},
-{
-nombre: "Chamarra de mezclilla",
-precio: 350,
-imagen: "chamarra.jpg",
-tallas: [
-{ talla: "M", disponible: true }
-]
-},
-{
-nombre: "Sudadera con capucha",
-precio: 300,
-imagen: "sudadera.jpg",
-tallas: [
-{ talla: "S", disponible: true },
-{ talla: "M", disponible: true },
-{ talla: "L", disponible: false }
-]
-},
-{
-nombre: "Sudadera con capucha",
-precio: 300,
-imagen: "sudadera.jpg",
-tallas: [
-{ talla: "S", disponible: true },
-{ talla: "M", disponible: true },
-{ talla: "L", disponible: false }
-]
-},
-{
-nombre: "Sudadera con capucha",
-precio: 300,
-imagen: "sudadera.jpg",
-tallas: [
-{ talla: "S", disponible: true },
-{ talla: "M", disponible: true },
-{ talla: "L", disponible: false }
-],
-{
-nombre: "Sudadera con capucha",
-precio: 300,
-imagen: "sudadera.jpg",
-tallas: [
-{ talla: "S", disponible: true },
-{ talla: "M", disponible: true },
-{ talla: "L", disponible: false }
-]
-},
-{
-nombre: "Sudadera con capucha",
-precio: 300,
-imagen: "sudadera.jpg",
-tallas: [
-{ talla: "S", disponible: true },
-{ talla: "M", disponible: true },
-{ talla: "L", disponible: false }
-]
-}
+  {
+    nombre: "Sudadera con capucha",
+    precio: 300,
+    imagen: "sudadera.jpg",
+    tallas: [
+      { talla: "S", disponible: true },
+      { talla: "M", disponible: true },
+      { talla: "L", disponible: false }
+    ]
+  },
+  {
+    nombre: "Chamarra de mezclilla",
+    precio: 350,
+    imagen: "chamarra.jpg",
+    tallas: [
+      { talla: "M", disponible: true }
+    ]
+  },
+  {
+    nombre: "Sudadera con capucha",
+    precio: 300,
+    imagen: "sudadera.jpg",
+    tallas: [
+      { talla: "S", disponible: true },
+      { talla: "M", disponible: true },
+      { talla: "L", disponible: false }
+    ]
+  },
+  {
+    nombre: "Sudadera con capucha",
+    precio: 300,
+    imagen: "sudadera.jpg",
+    tallas: [
+      { talla: "S", disponible: true },
+      { talla: "M", disponible: true },
+      { talla: "L", disponible: false }
+    ]
+  },
+  {
+    nombre: "Sudadera con capucha",
+    precio: 300,
+    imagen: "sudadera.jpg",
+    tallas: [
+      { talla: "S", disponible: true },
+      { talla: "M", disponible: true },
+      { talla: "L", disponible: false }
+    ]
+  },
+  {
+    nombre: "Sudadera con capucha",
+    precio: 300,
+    imagen: "sudadera.jpg",
+    tallas: [
+      { talla: "S", disponible: true },
+      { talla: "M", disponible: true },
+      { talla: "L", disponible: false }
+    ]
+  },
+  {
+    nombre: "Sudadera con capucha",
+    precio: 300,
+    imagen: "sudadera.jpg",
+    tallas: [
+      { talla: "S", disponible: true },
+      { talla: "M", disponible: true },
+      { talla: "L", disponible: false }
+    ]
+  }
 ];
 // ============================================================
 // NO NECESITAS TOCAR NADA DE AQUÍ HACIA ABAJO
@@ -267,36 +268,42 @@ document.getElementById("footer-ig").href = `https://instagram.com/${INSTAGRAM_U
 document.getElementById("footer-ig").textContent = `@${INSTAGRAM_USUARIO}`;
 
 productos.forEach(p => {
-const hayDisponible = p.tallas.some(t => t.disponible);
-const estadoCard = hayDisponible ? "disponible" : "agotado";
+  const hayDisponible = p.tallas.some(t => t.disponible);
+  const estadoCard = hayDisponible ? "disponible" : "agotado";
 
-const chipsHtml = p.tallas.map(t =>
-`<span class="talla-chip ${t.disponible ? '' : 'vendida'}">${t.talla}</span>`
-).join("");
+  const chipsHtml = p.tallas.map(t =>
+    `<span class="talla-chip ${t.disponible ? '' : 'vendida'}">${t.talla}</span>`
+  ).join("");
 
-const card = document.createElement("div");
-card.className = "card " + estadoCard;
+  const card = document.createElement("div");
+  card.className = "card " + estadoCard;
 
-card.innerHTML = `
-<div class="photo-wrap">
-<img src="${p.imagen}" alt="${p.nombre}" onerror="this.style.display='none'">
-<span class="stamp ${estadoCard}">
-${hayDisponible ? "Disponible" : "Agotado"}
-</span>
-</div>
-<div class="info">
-<h3>${p.nombre}</h3>
-<p class="price">$${p.precio.toLocaleString('es-MX')} MXN</p>
-<p class="tallas-label">Tallas</p>
-<div class="tallas-wrap">${chipsHtml}</div>
-<a class="ig-btn" href="${igLink}" target="_blank" rel="noopener">
-${hayDisponible ? "Preguntar en Instagram" : "Ya no disponible"}
-</a>
-</div>
-`;
-grid.appendChild(card);
+  card.innerHTML = `
+    <div class="photo-wrap">
+      <img src="${p.imagen}" alt="${p.nombre}" onerror="this.style.display='none'">
+      <span class="stamp ${estadoCard}">
+        ${hayDisponible ? "Disponible" : "Agotado"}
+      </span>
+    </div>
+    <div class="info">
+      <h3>${p.nombre}</h3>
+      <p class="price">$${p.precio.toLocaleString('es-MX')} MXN</p>
+      <p class="tallas-label">Tallas</p>
+      <div class="tallas-wrap">${chipsHtml}</div>
+      <a class="ig-btn" href="${igLink}" target="_blank" rel="noopener">
+        ${hayDisponible ? "Preguntar en Instagram" : "Ya no disponible"}
+      </a>
+    </div>
+  `;
+  grid.appendChild(card);
 });
 </script>
 
 </body>
 </html>
+
+
+
+
+
+
