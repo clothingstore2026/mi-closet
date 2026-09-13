@@ -186,7 +186,7 @@ footer a{ color: var(--tag-string); }
 // - imagen: nombre del archivo de la foto (subido junto a este index.html)
 // - tallas: lista de tallas. Cada una con disponible: true o false
 // ============================================================
-const INSTAGRAM_USUARIO = "tu_usuario"; // <-- pon aquí tu usuario de Instagram (sin @)
+const INSTAGRAM_USUARIO = "FABIANREYESPERALTA"; // <-- pon aquí tu usuario de Instagram (sin @)
 
 const productos = [
   {
@@ -273,9 +273,9 @@ const productos = [
 // ============================================================
 
 const grid = document.getElementById("grid");
-const igLink = `https://ig.me/m/${INSTAGRAM_USUARIO}`;
-document.getElementById("footer-ig").href = `https://instagram.com/${INSTAGRAM_USUARIO}`;
-document.getElementById("footer-ig").textContent = `@${INSTAGRAM_USUARIO}`;
+const igLink = `https://ig.me/m/${FABIANREYESPERALTA}`;
+document.getElementById("footer-ig").href = `https://instagram.com/${FABIANREYESPERALTA}`;
+document.getElementById("footer-ig").textContent = `@${FABIANREYESPERALTA}`;
 
 productos.forEach(p => {
   const hayDisponible = p.tallas.some(t => t.disponible);
